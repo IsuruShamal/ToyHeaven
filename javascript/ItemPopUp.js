@@ -23,7 +23,7 @@ function openProduct(id) {
 
     /* Show product image */
     document.getElementById("popupImage").src =
-        selectedProduct.image;
+    getProductImagePath(selectedProduct.image);
 
     /* Show product category */
     document.getElementById("popupCategory").textContent =

@@ -11,6 +11,14 @@ let productsPerPage = 6;
 let productContainer =
     document.getElementById("productContainer");
 
+function getProductImagePath(image) {
+
+    if (window.location.pathname.includes("/html/")) {
+        return image;
+    }
+
+    return image.replace("../img/", "./img/");
+}
 
 if (productContainer) {
 
@@ -97,12 +105,7 @@ function displayProducts(productList) {
 
     /* Go through each product */
     productsToShow.forEach(function(product) {
-        let imagePath = product.image;
-
-            if (!window.location.pathname.includes("/html/")) {
-                imagePath = product.image.replace("../img/", "./img/");
-            }
-
+        
         container.innerHTML += `
 
         <article class="product-card">
@@ -130,7 +133,7 @@ function displayProducts(productList) {
 
 
                 <img
-                    src="${product.image}"
+                    src="${getProductImagePath(product.image)}"
                     alt="${product.name}">
 
             </div>

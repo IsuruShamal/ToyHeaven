@@ -97,6 +97,11 @@ function displayProducts(productList) {
 
     /* Go through each product */
     productsToShow.forEach(function(product) {
+        let imagePath = product.image;
+
+            if (!window.location.pathname.includes("/html/")) {
+                imagePath = product.image.replace("../img/", "./img/");
+            }
 
         container.innerHTML += `
 

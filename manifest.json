@@ -1,0 +1,21 @@
+{
+  "name": "Toy Haven",
+  "short_name": "ToyHaven",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2EA1FF",
+  "icons": [
+    {
+      "src": "./img/brands/Logo size 192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/brands/LOGo size 512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

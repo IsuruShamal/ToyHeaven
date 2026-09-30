@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Toys & Collectibles</title>
+    <link rel="icon" href="../img/brands/FAV%20ICON.png" type="image/png">
+
+     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <p>FREE SHIPPING ON ORDERS OVER Rs.15 000</p>
+        <a href="../html/shopping.html">SHOP NOW →</a>
+    </div>
+
+<header class="desktop-header">
+
+    <div class="main-header">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="logo">
+            <img
+                src="../img/brands/LOGO.png"
+                alt="Toy Haven Logo"
+                style="width: 25%;"
+            >
+        </a>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchbar"
+                placeholder="Search toys, games and collectibles"
+            >
+
+            <button>⌕</button>
+
+            <div id="results"></div>
+
+        </div>
+
+
+        <!-- HEADER ICONS -->
+        <div class="header-actions">
+
+            <a href="../html/wishlist.html">
+
+                <span>
+                    <img
+                        src="../img/icons/wishlist.png"
+                        width="20"
+                        alt="Wishlist"
+                    >
+                </span>
+
+                <small>Wishlist</small>
+
+            </a>
+
+
+            <a href="../html/shopping_cart.html">
+
+                <span>
+                    <img
+                        src="../img/icons/shopping-cart.png"
+                        width="20"
+                        alt="Shopping Cart"
+                    >
+                </span>
+
+                <small>Cart</small>
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    src="../img/icons/person.svg"
+                    width="25"
+                    alt="User Profile"
+                >
+
+                <small>User</small>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESKTOP NAVIGATION -->
+
+    <div class="menu-bar">
+
+        <nav id="navMenu">
+
+            <a href="../index.html" >
+                Home
+            </a>
+
+            <a href="../html/shopping.html" class="active">
+                Shop
+            </a>
+
+            <a href="../html/aboutus.html">
+                About
+            </a>
+
+            <a href="../html/support.html">
+                Support
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+<!-- ================= MOBILE HEADER ================= -->
+
+<header class="mobile-header">
+
+    <!-- Hamburger -->
+    <button class="mobile-hamburger" id="mobileHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- Logo -->
+    <a href="../index.html " class="mobile-logo">
+        <img src="../img/brands/LOGO.png" alt="Toy Haven">
+    </a>
+
+
+    <!-- Search Icon -->
+   <button class="mobile-search-icon" id="mobileSearchIcon" type="button">
+        <img src="../img/icons/search.png" width="15" alt="Search">
+    </button>
+
+</header>
+
+
+<!-- ================= MOBILE SEARCH ================= -->
+
+<div class="mobile-search-area" id="mobileSearchArea">
+
+    <input
+        type="text"
+        id="mobileSearchInput"
+        placeholder="Search toys, games and collectibles"
+    >
+
+    <button id="mobileSearchClose">✕</button>
+
+</div>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-side-menu" id="mobileSideMenu">
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../html/shopping.html">Shop</a>
+        <a href="../html/aboutus.html">About</a>
+        <a href="../html/support.html">Support</a>
+    </nav>
+
+
+    <div class="mobile-menu-links">
+
+        <a href="../html/wishlist.html">
+            <img src="../img/icons/wishlist.png" alt="">
+            Wishlist
+        </a>
+
+        <a href="../html/shopping_cart.html">
+            <img src="../img/icons/shopping-cart.png" alt="">
+            Cart
+        </a>
+
+        <a href="#">
+            <img src="../img/icons/person.svg" alt="">
+            User
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+<!-- ================= CHECKOUT STEPS ================= -->
+
+<div class="checkout-steps">
+
+    <div class="step active">
+        <div class="step-number">1</div>
+        <span>Cart</span>
+    </div>
+
+    <div class="step-line"></div>
+
+    <div class="step active">
+        <div class="step-number">2</div>
+        <span>Checkout</span>
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="checkout-page">
+
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <div class="checkout-left">
+
+
+        <!-- ================= SHIPPING FORM ================= -->
+
+        <section class="checkout-section">
+
+            <h2>Shipping Address</h2>
+
+            <div class="address-box">
+
+                <label class="radio-option">
+
+                    <input
+                        type="radio"
+                        name="address"
+                        checked
+                    >
+
+                    <span>Add New Address</span>
+
+                </label>
+
+
+                <!-- Separate form for shipping information -->
+
+                <form id="shippingForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group full">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Full Name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                           <input
+                                type="tel"
+                                id="phone"
+                                maxlength="12"
+                                placeholder="0771234567 or +94771234567"
+>
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label for="streetAddress">
+                                Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="streetAddress"
+                                name="address"
+                                placeholder="Street Address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="City"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="postalCode">
+                                Postal Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="postalCode"
+                                name="postalCode"
+                                placeholder="Postal Code"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="address-actions">
+
+                        <button
+                            type="reset"
+                            class="cancel-button"
+                        >
+                            CANCEL
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="save-button"
+                        >
+                            SAVE THIS ADDRESS
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PAYMENT FORM ================= -->
+
+        <section class="checkout-section">
+
+            <h2>Payment Method</h2>
+
+            <div class="payment-box">
+
+
+                <!-- Separate form for payment information -->
+
+                <form id="paymentForm">
+
+
+                    <!-- Payment Options -->
+
+                    <div class="payment-options">
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="cash"
+                                id="cashPayment"
+                                checked
+                            >
+
+                            <span>Cash on Delivery</span>
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="card"
+                                id="cardPayment"
+                            >
+
+                            <span>Credit or Debit Card</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ================= CARD DETAILS ================= -->
+
+                    <div
+                        id="cardDetails"
+                        style="display: none;"
+                    >
+
+
+                        <div class="form-group full">
+
+                            <label for="cardholderName">
+                                Cardholder Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cardholderName"
+                                name="cardholderName"
+                                placeholder="Name on Card"
+                                disabled
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label for="cardNumber">
+                                Card Number
+                            </label>
+
+                            <div class="card-input">
+
+                                <input
+                                    type="text"
+                                    id="cardNumber"
+                                    name="cardNumber"
+                                    maxlength="16"
+                                    placeholder="0000 0000 0000 0000"
+                                    disabled
+
+                                >
+
+                                <span
+                                    class="visa"
+                                    id="cardBrand"
+                                ></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="expiry">
+                                    Expiry Date
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="expiry"
+                                    name="expiry"
+                                    maxlength="5"
+                                    placeholder="MM / YY"
+                                    disabled
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cvv">
+                                    CVV
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="cvv"
+                                    name="cvv"
+                                    placeholder="CVV"
+                                    maxlength="3"
+                                    disabled
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <label class="checkbox-option">
+
+                            <input
+                                type="checkbox"
+                                name="saveCard"
+                                id="saveCard"
+                                disabled
+                            >
+
+                            <span>
+                                Save this card for next time
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ================= PAYMENT BUTTONS ================= -->
+
+                    <div class="payment-actions">
+
+                        <button
+                            type="reset"
+                            class="cancel-button"
+                        >
+                            CANCEL
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="save-button"
+                        >
+                            SAVE PAYMENT METHOD
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================= RIGHT SIDE ================= -->
+
+    <aside class="order-summary">
+
+        <h2>Place Order</h2>
+
+        <p class="summary-description">
+            By placing your order, you agree to
+            our Terms and Conditions.
+        </p>
+
+
+        <div class="summary-title">
+            Order Summary
+        </div>
+        <div id="checkoutItems"></div>
+
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <strong id="summarySubtotal">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <div class="summary-row">
+
+            <span>Shipping</span>
+
+            <span id="summaryShipping">
+                $0.00
+            </span>
+
+        </div>
+
+
+        <div class="summary-row">
+
+            <span>Tax</span>
+
+            <span id="summaryTax">
+                $0.00
+            </span>
+
+        </div>
+
+
+        <div class="summary-row discount">
+
+            <span>Discount</span>
+
+            <span id="summaryDiscount">
+                -$0.00
+            </span>
+
+        </div>
+
+
+        <div class="summary-divider"></div>
+
+ <div class="promo-code">
+
+             <input
+                type="text"
+                id="promoCode"
+                placeholder="Promo code">
+
+            <button 
+                type="button"
+                onclick="applyPromo()">
+                APPLY
+            </button>
+
+        </div>
+        
+        <div class="summary-total">
+
+            <span>Order Total</span>
+
+            <strong id="summaryTotal">
+                $0.00
+            </strong>
+
+        </div>
+       
+
+        <!-- Place Order is outside the two forms -->
+
+        <button
+            type="button"
+            class="place-order-button"
+            id="placeOrderButton"
+        >
+            PLACE ORDER
+        </button>
+        
+
+
+        <p class="secure-checkout">
+            🔒 Secure Checkout
+        </p>
+
+    </aside>
+
+</main>
+<!-- PAYMENT SUCCESS POPUP -->
+<div id="paymentSuccessModal" class="payment-success-overlay">
+
+    <div class="payment-success-modal">
+
+        <!-- Animated Success Circle -->
+        <div class="o-circle c-container__circle o-circle__sign--success">
+            <div class="o-circle__sign"></div>
+        </div>
+
+        <h2>Payment Successful!</h2>
+
+        <p>
+            Thank you for your purchase.<br>
+            Your order has been placed successfully.
+        </p>
+
+        <button type="button" onclick="goBackHome()">
+            Back to Home
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+        <div class="newsletter">
+
+            <div>
+                <p>STAY IN THE LOOP</p>
+                <h2>Get the latest from Toy Haven</h2>
+            </div>
+
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button>SUBSCRIBE</button>
+            </div>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="#" class="footer-logo">
+                    <img src="../img/brands/LOGO.png" alt="Toy Haven Logo" width="150">
+                </a>
+
+                <p>
+                    Your favourite place for toys,
+                    games and amazing collectibles.
+                </p>
+
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><img src="../img/icons/facebook.png" width="25" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="../img/icons/instagram%20(1).png" width="25" alt="Instagram"></a>
+                    <a href="#" aria-label="TikTok"><img src="../img/icons/tik-tok.png" width="25" alt="TikTok"></a>
+                    <a href="https://wa.me/qr/Q5MU7E2TORSUK1" aria-label="WhatsApp"><img src="../img/icons/whatsapp.png" width="25" alt="WhatsApp"></a>
+
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <a href="./shopping.html">All Products</a>
+                <a href="./shopping.html?category=Figurines">Figurines</a>
+                <a href="./shopping.html?category=Toys">Toys</a>
+                <a href="./shopping.html?category=Board%20Games">Board Games</a>
+                <a href="./shopping.html?category=Diecast%20Cars">Diecast Cars</a>
+            </div>
+
+
+            <div class="footer-column">
+                    <h3>SUPPORT</h3>
+                    <a href="./support.html#order-support">Order Support</a>
+                    <a href="./support.html#delivery">Delivery Information</a>
+                    <a href="./support.html#product-questions">Product Questions</a>
+                    <a href="./support.html#returns">Returns & Refunds</a>
+                    <a href="./support.html#faq">FAQ</a>
+                    <a href="./support.html#contact">Contact Us</a>
+                </div>
+
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+            <a href="./aboutus.html#about-toy-haven">About Toy Haven</a>
+            <a href="./aboutus.html#our-story">Our Story</a>
+            <a href="./aboutus.html#privacy-policy">Privacy Policy</a>
+            <a href="./aboutus.html#terms">Terms</a>
+            <a href="./aboutus.html#feedback">Feedback</a>
+
+        </div>
+
+
+        </div>
+
+<div class="copyright">
+            <p>© 2026 Toy Haven. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+<div id="toast-container" class="toast-container"></div><script src="./javascript/hamburger.js"></script>
+
+<script src="../javascript/shippingdetails.js"></script>
+<script src="../javascript/hamburger.js"></script>
+<script src="../javascript/toast.js"></script>
+</body>
+
+</html>

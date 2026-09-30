@@ -1,0 +1,217 @@
+[
+    {
+        "id": 1,
+        "name": "LEGO One Piece Pirate Ship",
+        "category": "Toys",
+        "price": 22500,
+        "description": "One Piece pirate ship LEGO building set with characters and accessories.",
+        "image": "../img/products/9-c1c59ee8cc-327101605.webp",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 2,
+        "name": "LEGO Marvel Hulkbuster",
+        "category": "Toys",
+        "price": 32000,
+        "originalPrice": 40000,
+        "description": "Large LEGO Marvel Hulkbuster building model made for collectors.",
+        "image": "../img/products/81R9CxlQBFL._AC_UF894,1000_QL80_.jpg",
+        "badge": "20% OFF"
+    },
+    {
+        "id": 3,
+        "name": "Hot Wheels Lamborghini Estoque",
+        "category": "Diecast Cars",
+        "price": 2200,
+        "originalPrice": 2750,
+        "description": "Hot Wheels Lamborghini Estoque collectible diecast car.",
+        "image": "../img/products/164822908_01-2100.jpg",
+        "badge": "20% OFF"
+    },
+    {
+        "id": 4,
+        "name": "Bumblebee Transformers Action Figure",
+        "category": "Figurines",
+        "price": 6800,
+        "description": "Transformers Bumblebee action figure with detailed yellow and black design.",
+        "image": "../img/products/Hasbro-Transformers-Studio-Series-Age-of-Extinction-Deluxe-Class-Bumblebee-5-in-Action-Figure.jfif",
+        "badge": "NEW"
+    },
+    {
+        "id": 5,
+        "name": "Hot Wheels Fast & Furious Bundle",
+        "category": "Diecast Cars",
+        "price": 9500,
+        "originalPrice": 11500,
+        "description": "Five-car Hot Wheels Fast & Furious collectible bundle.",
+        "image": "../img/products/bundle offer fast and furious.jpg",
+        "badge": "BUNDLE"
+    },
+    {
+        "id": 6,
+        "name": "Hot Wheels Formula 1 Ferrari",
+        "category": "Diecast Cars",
+        "price": 3500,
+        "description": "Ferrari Formula 1 Hot Wheels collectible racing car.",
+        "image": "../img/products/f 1 hotwheel.webp",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 7,
+        "name": "Hot Wheels Ferrari SF90 Stradale",
+        "category": "Diecast Cars",
+        "price": 2800,
+        "description": "Blue Ferrari SF90 Stradale Hot Wheels collectible model.",
+        "image": "../img/products/ferari sf90.webp",
+        "badge": "NEW"
+    },
+    {
+        "id": 8,
+        "name": "McLaren Formula 1 Premium Model",
+        "category": "Diecast Cars",
+        "price": 5200,
+        "description": "Premium McLaren Formula 1 collectible model with detailed racing design.",
+        "image": "../img/products/fl maclerean premiun.webp",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 9,
+        "name": "Iron Man Action Figure",
+        "category": "Figurines",
+        "price": 7200,
+        "originalPrice": 9000,
+        "description": "Detailed Iron Man collectible action figure with classic red and gold armor.",
+        "image": "../img/products/iron man ac.webp",
+        "badge": "20% OFF"
+    },
+    {
+        "id": 10,
+        "name": "LEGO Batman 85th Anniversary Set",
+        "category": "Toys",
+        "price": 12500,
+        "description": "Limited edition LEGO Batman set celebrating Batman's 85th anniversary.",
+        "image": "../img/products/LEGO LIMITED EDITIONn batman 85th aniveasary.jfif",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 11,
+        "name": "Classic Ludo Board Game",
+        "category": "Board Games",
+        "price": 1800,
+        "description": "Classic four-player Ludo board game with colourful pieces and dice.",
+        "image": "../img/products/ludo.jpg",
+        "badge": "NEW"
+    },
+    {
+        "id": 12,
+        "name": "Monopoly Classic Board Game",
+        "category": "Board Games",
+        "price": 6500,
+        "originalPrice": 8000,
+        "description": "Classic Monopoly property trading board game for family and friends.",
+        "image": "../img/products/monopoly.webp",
+        "badge": "SALE"
+    },
+    {
+        "id": 13,
+        "name": "NERF Double Barrel Blaster",
+        "category": "Toys",
+        "price": 5800,
+        "description": "NERF blue and orange foam dart blaster with double barrel design.",
+        "image": "../img/products/nerf n.webp",
+        "badge": "NEW"
+    },
+    {
+        "id": 14,
+        "name": "NERF Elite Titan CS-50",
+        "category": "Toys",
+        "price": 18500,
+        "originalPrice": 22000,
+        "description": "Large NERF Elite Titan CS-50 blaster with high-capacity drum.",
+        "image": "../img/products/nerf titam.jpg",
+        "badge": "SALE"
+    },
+    {
+        "id": 15,
+        "name": "Pokemon Trading Card Pack",
+        "category": "Board Games",
+        "price": 3500,
+        "description": "Pokemon trading card pack for collecting, trading and playing.",
+        "image": "../img/products/pockemon.jpg",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 16,
+        "name": "RWB Porsche 930",
+        "category": "Diecast Cars",
+        "price": 6200,
+        "description": "RWB Porsche 930 premium collectible model with display case.",
+        "image": "../img/products/RWB porsche 930.webp",
+        "badge": "NEW"
+    },
+    {
+        "id": 17,
+        "name": "Spider-Man Collectible Figurine",
+        "category": "Figurines",
+        "price": 4500,
+        "originalPrice": 6000,
+        "description": "Spider-Man collectible figurine in an action pose with display base.",
+        "image": "../img/products/spiderman.jfif",
+        "badge": "25% OFF"
+    },
+    {
+        "id": 18,
+        "name": "Venom Collectible Statue",
+        "category": "Figurines",
+        "price": 9800,
+        "description": "Detailed Venom collectible statue with black suit design and display base.",
+        "image": "../img/products/venom.webp",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 19,
+        "name": "Jenga Wooden Block Game",
+        "category": "Board Games",
+        "price": 2800,
+        "description": "Classic wooden stacking game with numbered blocks for family and friends.",
+        "image": "../img/products/jenga.jpg",
+        "badge": "POPULAR"
+    },
+    {
+        "id": 20,
+        "name": "LEGO Pokemon Pikachu Display Set",
+        "category": "Toys",
+        "price": 28500,
+        "description": "Large Pikachu building set with Pokeball display and detailed brick-built design.",
+        "image": "../img/products/P12360_73-10109-101_01.jpg",
+        "badge": "NEW"
+    },
+    {
+        "id": 21,
+        "name": "Scrabble Classic Board Game",
+        "category": "Board Games",
+        "price": 4800,
+        "originalPrice": 5500,
+        "description": "Classic word-building Scrabble board game for friends and family.",
+        "image": "../img/products/scrabble.webp",
+        "badge": "SALE"
+    },
+    {
+        "id": 22,
+        "name": "Optimus Prime Transformers Figure",
+        "category": "Figurines",
+        "price": 8900,
+        "description": "Detailed Optimus Prime Transformers collectible figure with battle accessories.",
+        "image": "../img/products/transformer.jpeg",
+        "badge": "NEW"
+    },
+    {
+        "id": 23,
+        "name": "UNO Classic Card Game",
+        "category": "Board Games",
+        "price": 2200,
+        "description": "Classic UNO card game with colourful number and action cards.",
+        "image": "../img/products/uno.jpg",
+        "badge": "POPULAR"
+    }
+]

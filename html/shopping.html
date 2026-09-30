@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Toys & Collectibles</title>
+    <link rel="icon" href="../img/brands/FAV%20ICON.png" type="image/png">
+
+     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/shopping.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <p>FREE SHIPPING ON ORDERS OVER Rs.15 000</p>
+        <a href="../html/shopping.html">SHOP NOW →</a>
+    </div>
+
+<header class="desktop-header">
+
+    <div class="main-header">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="logo">
+            <img
+                src="../img/brands/LOGO.png"
+                alt="Toy Haven Logo"
+                style="width: 25%;"
+            >
+        </a>
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchbar"
+                placeholder="Search toys, games and collectibles"
+            >
+
+            <button>⌕</button>
+
+            <div id="results"></div>
+
+        </div>
+
+
+        <!-- HEADER ICONS -->
+        <div class="header-actions">
+
+            <a href="../html/wishlist.html">
+
+                <span>
+                    <img
+                        src="../img/icons/wishlist.png"
+                        width="20"
+                        alt="Wishlist"
+                    >
+                </span>
+
+                <small>Wishlist</small>
+
+            </a>
+
+
+            <a href="../html/shopping_cart.html">
+
+                <span>
+                    <img
+                        src="../img/icons/shopping-cart.png"
+                        width="20"
+                        alt="Shopping Cart"
+                    >
+                </span>
+
+                <small>Cart</small>
+
+            </a>
+
+
+            <a href="#">
+
+                <img
+                    src="../img/icons/person.svg"
+                    width="25"
+                    alt="User Profile"
+                >
+
+                <small>User</small>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESKTOP NAVIGATION -->
+
+    <div class="menu-bar">
+
+        <nav id="navMenu">
+
+            <a href="../index.html" >
+                Home
+            </a>
+
+            <a href="../html/shopping.html" class="active">
+                Shop
+            </a>
+
+            <a href="../html/aboutus.html">
+                About
+            </a>
+
+            <a href="../html/support.html">
+                Support
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+<!-- ================= MOBILE HEADER ================= -->
+
+<header class="mobile-header">
+
+    <!-- Hamburger -->
+    <button class="mobile-hamburger" id="mobileHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- Logo -->
+    <a href="../index.html " class="mobile-logo">
+        <img src="../img/brands/LOGO.png" alt="Toy Haven">
+    </a>
+
+
+    <!-- Search Icon -->
+   <button class="mobile-search-icon" id="mobileSearchIcon" type="button">
+        <img src="../img/icons/search.png" width="15" alt="Search">
+    </button>
+
+</header>
+
+
+<!-- ================= MOBILE SEARCH ================= -->
+
+<div class="mobile-search-area" id="mobileSearchArea">
+
+    <input
+        type="text"
+        id="mobileSearchInput"
+        placeholder="Search toys, games and collectibles"
+    >
+
+    <button id="mobileSearchClose">✕</button>
+
+</div>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-side-menu" id="mobileSideMenu">
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../html/shopping.html">Shop</a>
+        <a href="../html/aboutus.html">About</a>
+        <a href="../html/support.html">Support</a>
+    </nav>
+
+
+    <div class="mobile-menu-links">
+
+        <a href="../html/wishlist.html">
+            <img src="../img/icons/wishlist.png" alt="">
+            Wishlist
+        </a>
+
+        <a href="../html/shopping_cart.html">
+            <img src="../img/icons/shopping-cart.png" alt="">
+            Cart
+        </a>
+
+        <a href="#">
+            <img src="../img/icons/person.svg" alt="">
+            User
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- =====================  MAIN SHOP SECTION  ===================== -->
+<main class="section">
+
+    <div class="section-heading">
+        <div>
+            <p>SHOP</p>
+            <h2>All Products</h2>
+        </div>
+
+        <button class="filter-toggle-btn" id="filterToggleBtn">
+            Filter
+        </button>
+    </div>
+
+    <div class="shop-layout">
+
+        <aside class="filter-sidebar" id="filterSidebar">
+
+            <div class="filter-panel-head">
+                <h3>Filters</h3>
+                <button class="close-button" id="filterCloseBtn">
+                    &times;
+                </button>
+            </div>
+
+                <div class="filter-group">
+
+                    <h4>Category</h4>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Figurines">
+                        Figurines
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Toys">
+                        Toys
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Board Games">
+                        Board Games
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Diecast Cars">
+                        Diecast Cars
+                    </label>
+
+                </div>
+
+            <div class="filter-group">
+
+            <h4>Sort by</h4>
+
+            <select id="sortFilter">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="low-high">
+                    Price: Low to High
+                </option>
+
+                <option value="high-low">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+            <div class="filter-group">
+
+                <h4>Product Type</h4>
+
+                <select id="typeFilter">
+                    <option value="all">All Products</option>
+                    <option value="new">New</option>
+                    <option value="popular">Popular</option>
+                    <option value="sale">Sale</option>
+                    <option value="bundle">Bundle Offers</option>
+                </select>
+
+            </div>
+
+            <div class="filter-actions">
+
+                <button class="details" id="filterCancelBtn">
+                    Close
+                </button>
+
+                <button class="cart" id="filterApplyBtn">
+                    Apply
+                </button>
+
+            </div>
+
+        </aside>
+
+        <div class="filter-overlay" id="filterOverlay"></div>
+
+
+<!-- PRODUCTS LOAD FROM JSON -->
+
+<div
+    class="products"
+    id="productContainer"
+    data-json="../products/products.json">
+</div>
+<div id="pagination"></div>
+
+</div>
+ <!-- Product Popup -->
+
+<div id="productPopup" class="popup">
+    <div class="popup-content">
+
+        <button id="closePopup" class="close-button">
+           ×
+        </button>
+
+        <img id="popupImage" src="../img/brands/LOGO.png" alt="Product">
+
+        <div class="popup-info">
+
+            <p id="popupCategory"></p>
+
+            <h2 id="popupName"></h2>
+
+            <p id="popupDescription"></p>
+
+            <h3 id="popupPrice"></h3>
+
+            <button class="cart" id="popupCart">Add to Cart</button>
+
+            <button class="details" id="popupWishlist">Add to Wishlist</button>
+
+        </div>
+
+    </div>
+
+</div>
+</main>
+
+
+    <footer>
+
+        <div class="newsletter">
+
+            <div>
+                <p>STAY IN THE LOOP</p>
+                <h2>Get the latest from Toy Haven</h2>
+            </div>
+
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button>SUBSCRIBE</button>
+            </div>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="#" class="footer-logo">
+                    <img src="../img/brands/LOGO.png" alt="Toy Haven Logo" width="150">
+                </a>
+
+                <p>
+                    Your favourite place for toys,
+                    games and amazing collectibles.
+                </p>
+
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><img src="../img/icons/facebook.png" width="25" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="../img/icons/instagram%20(1).png" width="25" alt="Instagram"></a>
+                    <a href="#" aria-label="TikTok"><img src="../img/icons/tik-tok.png" width="25" alt="TikTok"></a>
+                    <a href="https://wa.me/qr/Q5MU7E2TORSUK1" aria-label="WhatsApp"><img src="../img/icons/whatsapp.png" width="25" alt="WhatsApp"></a>
+
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <a href="./shopping.html">All Products</a>
+                <a href="./shopping.html?category=Figurines">Figurines</a>
+                <a href="./shopping.html?category=Toys">Toys</a>
+                <a href="./shopping.html?category=Board%20Games">Board Games</a>
+                <a href="./shopping.html?category=Diecast%20Cars">Diecast Cars</a>
+            </div>
+
+
+            <div class="footer-column">
+                    <h3>SUPPORT</h3>
+                    <a href="./support.html#order-support">Order Support</a>
+                    <a href="./support.html#delivery">Delivery Information</a>
+                    <a href="./support.html#product-questions">Product Questions</a>
+                    <a href="./support.html#returns">Returns & Refunds</a>
+                    <a href="./support.html#faq">FAQ</a>
+                    <a href="./support.html#contact">Contact Us</a>
+                </div>
+
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+            <a href="./aboutus.html#about-toy-haven">About Toy Haven</a>
+            <a href="./aboutus.html#our-story">Our Story</a>
+            <a href="./aboutus.html#privacy-policy">Privacy Policy</a>
+            <a href="./aboutus.html#terms">Terms</a>
+            <a href="./aboutus.html#feedback">Feedback</a>
+
+        </div>
+
+
+        </div>
+
+<div class="copyright">
+            <p>© 2026 Toy Haven. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+<div id="toast-container" class="toast-container"></div><script src="./javascript/hamburger.js"></script>
+
+<script src="../javascript/searchbar.js"></script>
+<script src="../javascript/toast.js"></script>
+<script src="../javascript/product.js"></script>
+<script src="../javascript/ItemPopUp.js"></script>
+<script src="../javascript/AddtoCart.js"></script>
+<script src="../javascript/addtoWishlist.js"></script>
+
+<script src="../javascript/Filter.js"></script>
+<script src="../javascript/hamburger.js"></script>
+</body>
+</html>
